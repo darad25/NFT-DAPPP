@@ -7,7 +7,7 @@ const network = NETWORK.eth;
 // General metadata for Ethereum
 const namePrefix = "Your Collection";
 const description = "Remember to replace this description";
-const baseUri = "ipfs://QmY7guLVCTdU8uK4243Ef2oDoWv72xjdnnfgJ5h4fkALvE";
+const baseUri = "https://gateway.pinata.cloud/ipfs/QmSDTC7qt8UK5yadxo6u93xpuSUCLtgzjMaTKxUNfDhdSa";
 
 const solanaMetadata = {
   symbol: "YC",

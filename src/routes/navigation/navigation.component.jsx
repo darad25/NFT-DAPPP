@@ -2,9 +2,11 @@ import { Fragment } from 'react';
 import { Outlet, Link } from 'react-router-dom';
 
 import { ReactComponent as ELogo } from '../../assets/eth_adobe_express.svg';
+import  loadWeb3 from '../../utils/walletConnect/walletConnect.utils';
+import Sidebar from '../../components/sidebar/sidebar.component';
 
-import { NavigationContainer, NavLinks, NavLink, LogoContainer, Cnamecontainer } from './navigation.styles';
-
+import {Connectcontainer, NavigationContainer, NavLinks, NavLink, NavLinko, LogoContainer, Cnamecontainer, Sidestew } from './navigation.styles';
+ 
 const Navigation = () => { 
 
     return (
@@ -13,32 +15,34 @@ const Navigation = () => {
           <LogoContainer to='/'>
              <ELogo className='logo'/>
           </LogoContainer>
-          <Cnamecontainer>
-              N F T - D A P P 
+          <Cnamecontainer to='/'>
+              C O B E N     M I N T
           </Cnamecontainer>
          <NavLinks>
             <NavLink to='/shop'>
               Explore            
             </NavLink> 
               <NavLink>
-                Features
+              Features
             </NavLink>
             
               <NavLink to='/auth'>
                Community             
-            </NavLink>
-            
-            <NavLink to='/shop'>
-              Connect             
             </NavLink> 
+            
+            <NavLinko as='span' onClick={loadWeb3}>
+              Connect             
+            </NavLinko> 
          </NavLinks>
        </NavigationContainer>
-       <Outlet />
+        <div>
+        <Sidestew> 
+           <Sidebar />
+         </Sidestew>
+        </div>
+     <Outlet />
      </Fragment>
     );
  };  
 
     export default Navigation;
-
-
-    
