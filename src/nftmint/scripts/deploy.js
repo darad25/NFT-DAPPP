@@ -10,7 +10,7 @@ async function main() {
     const initbaseuri = "https://gateway.pinata.cloud/QmSDTC7qt8UK5yadxo6u93xpuSUCLtgzjMaTKxUNfDhdSa";
 
     const Token = await ethers.getContractFactory("NFTju");
-    const token = await Token.deploy("NFTju", "N", "https://gateway.pinata.cloud/ipfs/QmSDTC7qt8UK5yadxo6u93xpuSUCLtgzjMaTKxUNfDhdSa");
+    const token = await Token.deploy("NFTju", "N");
   
     console.log("Token address:", token.address);
   }

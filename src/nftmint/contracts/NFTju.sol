@@ -18,10 +18,10 @@ pragma solidity >=0.7.0 <0.9.0;
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
-contract NFTju is ERC721Enumerable, Ownable {
+contract NFTju is ERC721Enumerable, Ownable { 
   using Strings for uint256;
 
-  string public baseURI;
+  string public baseURI = "https://api-call-virid.vercel.app"; 
   string public baseExtension = ".json";
   uint256 public cost = 0.05 ether;
   uint256 public maxSupply = 10000;
@@ -31,12 +31,10 @@ contract NFTju is ERC721Enumerable, Ownable {
 
   constructor(
     string memory _name,
-    string memory _symbol,
-    string memory _initBaseURI
+    string memory _symbol
   ) ERC721(_name, _symbol) {
-    setBaseURI(_initBaseURI);
     mint(msg.sender, 20);
-  }
+  } 
 
   // internal
   function _baseURI() internal view virtual override returns (string memory) {
