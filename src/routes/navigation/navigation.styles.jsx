@@ -78,7 +78,7 @@ export const NavLink = styled(Link)`
   width: auto;
   height: 1px;
   display: flex;
-  color: grey;
+  color: black;
   justify-content: flex-start;
   padding: 1.2rem 2rem;
   cursor: pointer;
@@ -91,7 +91,7 @@ export const NavLink = styled(Link)`
   transition: all .2s;
   margin-bottom: 10px;
   align-items: center;
-  border: 3px solid #4c00b0;
+  border: 1px solid #4c00b0;
    cursor: pointer;
    background-size: cover;
 `;
@@ -103,5 +103,7 @@ export const NavLinko = styled(Link)`
 export const Sidestew = styled.div`
    padding: 50px 0px 0px 0px;
 `;
+
+
 // linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark) navllink grey
 //    background: linear-gradient(#e66465, #9198e5);  you can find the exact #color you want to use through rgba

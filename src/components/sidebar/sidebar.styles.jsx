@@ -15,6 +15,7 @@ export const Sidebarlogocontainer = styled.div`
    place-items: center;
    height: 120px;
    font-size: 1.5rem;
+   padding-right: 100px;
    font-weight: 700;
    font-family: 'Mochiy Pop P one', sans-serif;
 `; 
@@ -53,18 +54,23 @@ export const Sidebarmenuitemcontainer = styled.div`
 `; 
 
 export const Sidebarmenuitemiconcontainer = styled.div`
-   margin-right: 1rem;
+   margin-right: 0.7rem;
    padding-top: 22px;
 
 
    i {
     font-size: 1.75rem;
+    font-weight: 500;
+    color: black;
     }
 `; 
 
 export const Sidebarmenuitemtextcontainer = styled.div`
    font-size: 1.05rem;
    padding-top: 22px;
+   font-weight: bold;
+   color: black;
+   font-family: 'Mochiy Pop P one', sans-serif;
 
 `;
 export const NavLinks = styled(Link)`

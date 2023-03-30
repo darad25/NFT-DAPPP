@@ -5,7 +5,7 @@ import { ReactComponent as ELogo } from '../../assets/eth_adobe_express.svg';
 import  loadWeb3 from '../../utils/walletConnect/walletConnect.utils';
 import Sidebar from '../../components/sidebar/sidebar.component';
 
-import {Connectcontainer, NavigationContainer, NavLinks, NavLink, NavLinko, LogoContainer, Cnamecontainer, Sidestew } from './navigation.styles';
+import {Connectcontainer, NavigationContainer, NavLinks, NavLink, NavLinko, LogoContainer, Cnamecontainer, Sidestew, Sidessearch } from './navigation.styles';
  
 const Navigation = () => { 
 
@@ -38,8 +38,10 @@ const Navigation = () => {
         <div>
         <Sidestew> 
            <Sidebar />
-         </Sidestew>
+         </Sidestew>   
         </div>
+        
+        
      <Outlet />
      </Fragment>
     );

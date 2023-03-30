@@ -5,7 +5,7 @@ import {NavLinks, Sidebarmenucontainer, Sidebarmenuindcontainer, Sidebarmenuitem
 const Sidebar = () => {
     return <Sidebarcontainer> 
        <Sidebarlogocontainer>
-           Animate.
+           ANIMATE.
        </Sidebarlogocontainer>
        <Sidebarmenucontainer>
        <Sidebarmenuindcontainer></Sidebarmenuindcontainer>
@@ -20,14 +20,23 @@ const Sidebar = () => {
 
        <Sidebarmenuitemcontainer>
        <Sidebarmenuitemiconcontainer>
-         <i className='bx bx-home'></i> 
+         <i className='bx bx-wallet'></i> 
         </Sidebarmenuitemiconcontainer>
         <Sidebarmenuitemtextcontainer>
-         Dashboard
+         Wallet
        </Sidebarmenuitemtextcontainer>   
        </Sidebarmenuitemcontainer>      
+
        
-           
+       <Sidebarmenuitemcontainer>
+       <Sidebarmenuitemiconcontainer>
+         <i className='bx bx-search'></i> 
+        </Sidebarmenuitemiconcontainer>
+        <Sidebarmenuitemtextcontainer>
+         Analytics
+       </Sidebarmenuitemtextcontainer>   
+       </Sidebarmenuitemcontainer>  
+
        </Sidebarmenucontainer>
     </Sidebarcontainer>
 }; 

@@ -46,13 +46,13 @@ import  abi  from "../../nftmint/artifacts/contracts/NFTju.sol/NFTju.json";
   
     const mint = async () => {
       const Labi = abi.Labi;
-      const contractAddress = ""; //addr of contract to call
+      const contractAddress = "ffcac71d0d7ae3fe567eb27fc05800c560a126543d5006f9cde84e9a496bfe0f"; //addr of contract to call
       const web3 = new Web3(window.ethereum);
   
       const contractInstance = new web3.eth.Contract(abi, contractAddress);
   
       contractInstance.methods
-        .mint("0x00address youre minting to", "num of nfts to be minted") // check mint func in sol file, you hve to provide the accepted args for it to work 
+        mint("0xeaDAA842467028D51fAe2f838F56515540F00F79", "2") // check mint func in sol file, you hve to provide the accepted args for it to work 
         .send({
           // from: account,
         })

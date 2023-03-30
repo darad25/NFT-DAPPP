@@ -7,7 +7,7 @@ async function main() {
     
     const name = "NFTju"; 
     const symbol = "N";
-    const initbaseuri = "https://gateway.pinata.cloud/QmSDTC7qt8UK5yadxo6u93xpuSUCLtgzjMaTKxUNfDhdSa";
+    // const initbaseuri = "https://gateway.pinata.cloud/QmSDTC7qt8UK5yadxo6u93xpuSUCLtgzjMaTKxUNfDhdSa";
 
     const Token = await ethers.getContractFactory("NFTju");
     const token = await Token.deploy("NFTju", "N");

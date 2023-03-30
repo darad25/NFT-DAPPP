@@ -16,6 +16,17 @@ export const LogoContainer = styled.div`
      background-image: url(${pic});
 `;
 
+export const Asearchcontainer = styled.div`
+    flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 22px;
+  border: none;
+    margin-left: 80px;
+     padding-left: 80px;
+`
+
 
 // background-size: cover;     background-repeat: no-repeat;
 
