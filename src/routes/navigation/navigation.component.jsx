@@ -1,50 +1,47 @@
 import { Fragment } from 'react';
 import { Outlet, Link } from 'react-router-dom';
 
-import { ReactComponent as ELogo } from '../../assets/eth_adobe_express.svg';
 import  loadWeb3 from '../../utils/walletConnect/walletConnect.utils';
-import Sidebar from '../../components/sidebar/sidebar.component';
+import Othersidebar from '../../components/othersidebar/othersidebar.component';
 
-import {Connectcontainer, NavigationContainer, NavLinks, NavLink, NavLinko, LogoContainer, Cnamecontainer, Sidestew, Sidessearch } from './navigation.styles';
- 
+import {Connectcontainer,ImageContainer, Arrowcontainer, NavigationContainer,NavL, NavLinks, NavLink, NavLin, NavLi, NavLinko, LogoContainer, Cnamecontainer, Sidestew, Sidessearch } from './navigation.styles';
+
 const Navigation = () => { 
 
     return (
      <Fragment>
        <NavigationContainer>
-          <LogoContainer to='/'>
+        {/* <li> </li> */}
+          {/* <LogoContainer to='/'>
              <ELogo className='logo'/>
-          </LogoContainer>
+          </LogoContainer> */}
           <Cnamecontainer to='/'>
-              C O B E N     M I N T
+              Dashboard
           </Cnamecontainer>
          <NavLinks>
-            <NavLink to='/shop'>
-              Explore            
+            <NavLink to='/'>
+              Trending      
             </NavLink> 
-              <NavLink>
-              Features
-            </NavLink>
-            
-              <NavLink to='/auth'>
-               Community             
-            </NavLink> 
-            
-            <NavLinko as='span' onClick={loadWeb3}>
-              Connect             
+              <NavLin to='/'>
+              Art
+            </NavLin>
+              <NavLi to='/'>
+              Music             
+            </NavLi> 
+            <NavLinko onClick={loadWeb3}>
+              Connect  
+            <Arrowcontainer>
+             <i className='bx bx-down-arrow'></i> 
+            </Arrowcontainer> 
             </NavLinko> 
+            <NavL to='/auth'>
+              Gifs      
+            </NavL>
          </NavLinks>
        </NavigationContainer>
-        <div>
-        <Sidestew> 
-           <Sidebar />
-         </Sidestew>   
-        </div>
-        
-        
-     <Outlet />
+      <Outlet />
      </Fragment>
     );
  };  
 
-    export default Navigation;
+  export default Navigation; 
