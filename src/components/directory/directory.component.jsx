@@ -1,13 +1,11 @@
-import {LogoContainer, DirectoryContainer, Asearchcontainer } from './directory.styles';
-import SearchBar from '../../components/searchbar/searchbar.component';
+import {LogoContainer,Nftcardcontainer, DirectoryContainer, Asearchcontainer } from './directory.styles';
+import Nftcard from '../nftcard/nftcard.component';
 
 const Directory = () => {
   
   return (
     <DirectoryContainer>
-      <Asearchcontainer>
-      <SearchBar/>
-      </Asearchcontainer>
+      <Nftcard/>
     </DirectoryContainer>
   );
   }; 

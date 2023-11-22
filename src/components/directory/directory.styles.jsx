@@ -2,25 +2,15 @@ import styled from "styled-components";
 import pic from "../../assets/herer.jpg";
 
 export const DirectoryContainer = styled.div`
-    position: absolute;
-    height: 100%;
-    width: 100%;
+    position: fixed;
+    height: 0%;
+    width: 0%;
 `; 
 
-export const LogoContainer = styled.div`
-     
-     position: relative;
-     height: 100%;
-     width: 100%;
-     background-size: 800px 600px;
-     background-image: url(${pic});
-`;
-
-export const Asearchcontainer = styled.div`
-    flex-direction: column;
-  justify-content: center;
+export const Nftcardcontainer = styled.div`
+  position: fixed;
   align-items: center;
-  height: 100vh;
+  height: 0vh;
   font-size: 22px;
   border: none;
     margin-left: 80px;

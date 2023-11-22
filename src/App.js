@@ -1,5 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
 import 'boxicons/css/boxicons.min.css';
+import './index.scss'
 
 import Home from './routes/home/home.component';
 import Navigation from './routes/navigation/navigation.component';

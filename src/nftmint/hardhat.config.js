@@ -1,5 +1,6 @@
-require("dotenv").config();
 require ("@nomicfoundation/hardhat-toolbox");
+require('dotenv').config();
+
 
 // Go to https://www.alchemyapi.io, sign up, create
 // a new App in its dashboard, and replace "KEY" with its key
@@ -15,8 +16,8 @@ module.exports = {
       solidity : "0.8.9",
       networks : {
          sepolia: {
-            url: `https://eth-sepolia.g.alchemy.com/v2/${ALCHEMY_API_KEY}`,
-            accounts: [`${SEPOILA_PRIVATE_KEY}`]
-         },
-  },
+            url: `https://eth-sepolia.g.alchemy.com/v2/${process.env.API_KEY}`,
+            accounts: [`${process.env.PRIVATE_KEY}`],
+         }
+  }
 }  

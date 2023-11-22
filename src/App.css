@@ -1,7 +1,8 @@
+/* this can operate as the main in scss in html projects for rem or px generalization that can be easily used in all styles.jsx */
 .App {
   text-align: center;
 }
-
+ 
 .App-logo {
   height: 40vmin;
   pointer-events: none;

@@ -51,7 +51,6 @@ import  abi  from "../../nftmint/artifacts/contracts/NFTju.sol/NFTju.json";
   
       const contractInstance = new web3.eth.Contract(abi, contractAddress);
   
-      contractInstance.methods
         mint("0xeaDAA842467028D51fAe2f838F56515540F00F79", "2") // check mint func in sol file, you hve to provide the accepted args for it to work 
         .send({
           // from: account,
