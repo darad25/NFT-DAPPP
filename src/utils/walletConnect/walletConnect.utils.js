@@ -1,6 +1,6 @@
 import Web3 from "web3";
 import { useState } from "react";
-import  abi  from "../../nftmint/artifacts/contracts/NFTju.sol/NFTju.json";
+// import  abi  from "../../nftmint/artifacts/contracts/NFTju.sol/NFTju.json";
    
     const loadWeb3 = async () => {
       // const [account, setAccount] = useState();
