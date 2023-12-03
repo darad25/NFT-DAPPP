@@ -45,16 +45,20 @@ export const Othersidebarlogocontainer = styled.div`
 
 
 export const ImageContainer = styled.div`
-      position: fixed;
       width: 10%;
-      padding-left: 180px;
-      align-items: center;
-      top: 29px;
-      border-radius: 10rem;
+      margin-left: 4.5rem;
+      padding-top: 6px;
+   
+      i {
+         font-size: 2.05rem;
+         font-weight: 500;
+         padding-right: 10px;
+         padding-bottom: 30px;
 
+      }
 
       img {
-        width: 27%;
+        width: 29%;
         height: 70%;
         background-color: white;
         border-radius: 10rem;
@@ -171,16 +175,16 @@ export const Ltccontainer = styled.div`
    margin-left: 1.5rem;
    padding-top: 33px;
    position: fixed;
-   font-size: 0.2rem;
+   font-size: 1rem;
    font-weight: 900;
    letter-spacing: 0.5px;
    font-family: 'Mochiy Pop P one', sans-serif;
 
    img {
-      width: 10.2%;
-      height: 30%;
+      width: 4%;
+      height: 70%;
       background-color: white;
-      border-radius: 4rem;
+      border-radius: 10rem;
     }  
 
   

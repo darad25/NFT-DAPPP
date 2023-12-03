@@ -1,6 +1,6 @@
 import { Outlet, Link } from 'react-router-dom';
 
-import myGif from '../../assets/icons8-bell.gif';
+import myGif from '../../assets/usenotifs.png';
 import btc from '../../images/btc.png';
 import eth from '../../images/ethmaiN.png';
 import ltc from '../../images/ltc.png';
@@ -14,7 +14,7 @@ const Othersidebar = () => {
       <Othersidebarcontainer> 
        <Othersidebarlogocontainer to='/'>
        <ImageContainer>  
-       <img src={myGif}/>
+       <i className='bx bx-notification'></i> 
        </ImageContainer>
        </Othersidebarlogocontainer>
        <Othersidebarback>
@@ -41,7 +41,7 @@ const Othersidebar = () => {
        </Othersidebarmenuitemtextcontainer>   
 
        <Ltccontainer> 
-       <img src={ltc} alt="my-gif" />
+       <img src={btc} alt="my-gif" />
        </Ltccontainer>
        <Ltcquantitycontainer>
         1.03 LTC
@@ -67,7 +67,7 @@ const Othersidebar = () => {
        </Othersidebarmenuitemtextcontainer>  
 
        <Ltccontainer>
-       <img src={ltc} alt="my-gif" />
+       <img src={eth} alt="my-gif" />
         </Ltccontainer>
         <Lquantitycontainer>
         1.03 LTC
